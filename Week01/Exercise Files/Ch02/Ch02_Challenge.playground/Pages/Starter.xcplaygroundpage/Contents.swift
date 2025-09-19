@@ -15,14 +15,21 @@
  
  */
 // 1
+var characterName: String = "Audrey"
+var weaponClassification: String = "Sword"
 
 // 2
+weaponClassification += " of Awesomeness"
 
 // 3
+var currentMana = 0.1
 
 // 4
+var manaPercentage = currentMana / 100
+manaPercentage = String(manaPercentage)
 
 // 5
+
 
 // 6
 

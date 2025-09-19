@@ -16,13 +16,32 @@
  
  */
 // 1
+var lefthandWeapon: String?
+var righthandWeapon: String?
 
 // 2
 
+
 // 3
+var playerExp: [String: Int] = ["Audrey": 5, "Cyrus": 10]
 
 // 4
+for player in playerExp {
+    guard (player.value < 1) else {
+        print ("no hp")
+        continue
+    }
+    
+    print ("\(player.key) has \(player.value)")
+    
+    switch (player.value) {
+    case (32): print A
+    default (200...500): print B
+    }
+}
 
 // 5
 
+
 // 6
+

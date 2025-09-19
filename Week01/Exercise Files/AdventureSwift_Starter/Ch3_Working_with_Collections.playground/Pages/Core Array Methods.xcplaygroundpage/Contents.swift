@@ -17,13 +17,27 @@
  
  */
 // Changing & appending items
-
+var characterClasses = ["A", "B", "C"]
+characterClasses.append("D")
+characterClasses += ["E", "F"]
 
 //Inserting and removing items
-
+characterClasses.insert("G", at: 1)
+characterClasses.remove(at: 3)
 
 // Ordering and querying values
+characterClasses.reverse()
+var reversedClasses = characterClasses.reversed()
 
+characterClasses.sort()
+var sortedClasses = characterClasses.sorted()
+
+print(characterClasses)
 
 // 2D arrays and subscripts
+var skillTree: [[String]] = [
+    ["A", "B", "C"],
+    ["D", "E", "F"]
+]
 
+var attackTreeSkill = skillTree[0][2]

@@ -15,10 +15,17 @@
 
  */
 // Creating dictionaries
-
+var blacksmithShop: [String: Int] = ["Bottle": 10, "Hammer": 50, "Anvil": 200]
 
 // Accessing and modifying values
+var shieldPrice = blacksmithShop["Shield"]
+blacksmithShop["Bottle"] = 11
+blacksmithShop["Shield"] = 12
 
+print(blacksmithShop)
 
 // All keys and values
-
+let allKeys = [String](blacksmithShop.keys)
+let allValues = [Int](blacksmithShop.values)
+print(allKeys)
+print(allValues)

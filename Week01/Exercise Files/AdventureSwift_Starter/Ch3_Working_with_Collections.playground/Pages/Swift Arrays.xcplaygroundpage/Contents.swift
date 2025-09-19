@@ -15,10 +15,16 @@
  
  */
 // Creating arrays
+var levelDifficulty: [String] = ["Easy", "Medium", "Hard"]
 
+var emptyArray: [String] = []
+var emptyArray2: Array<String> = Array<String>()
+    //both above empty array
 
 // Count and isEmpty
-
+levelDifficulty.count
+levelDifficulty.isEmpty
 
 // Accessing array values
-
+var mostDifficult = levelDifficulty[2]
+levelDifficulty[2] = "Utter Ridiculousness"

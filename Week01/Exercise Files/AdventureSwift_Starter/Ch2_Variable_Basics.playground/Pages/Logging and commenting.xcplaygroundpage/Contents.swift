@@ -11,4 +11,5 @@
  
 [Previous Topic](@previous)                                                 [Next Topic](@next)
  */
-
+// or /* */
+//log with print

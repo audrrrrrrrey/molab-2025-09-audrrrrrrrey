@@ -14,10 +14,11 @@
  
  */
 // Declaring strings
-
+var activeString: String = "Retrieving the cart!"
 
 // Concatenation
 
 
 // String interpolation
-
+var color: String = "blue"
+var colorSentence: String = "My favorite color is \(color)!"
