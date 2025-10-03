@@ -14,80 +14,92 @@ struct ContentView: View {
     @State private var offset = 0.0
     
     var body: some View {
-        
-        ZStack {
-            LinearGradient(colors: [.red, .black], startPoint: .top, endPoint: .bottom);
+        TabView {
+            ZStack {
+                LinearGradient(colors: [.red, .black], startPoint: .top, endPoint: .bottom);
                 
-            
-            VStack {
-                
-                Text("Tune Toy")
-                    .foregroundStyle(.red)
-                    .bold()
-                    .font(.system(size: 50))
-                                
+                VStack {
+                    Text("Tune Toy")
+                        .foregroundStyle(.red)
+                        .bold()
+                        .font(.system(size: 50))
                     
-                Text("Toggle the instruments, take a listen!")
-                    .foregroundStyle(.red)
-                    .padding()
-                
-                Button {
-                    AudioServicesPlaySystemSound(1025)
+                    Text("Toggle the instruments, take a listen!")
+                        .foregroundStyle(.red)
+                        .padding()
                     
-                } label: {
-                    Image(systemName: "horn.fill")
+                    Image(systemName: "music.quarternote.3")
                         .foregroundStyle(.red)
                         .font(.system(size: 60))
                         .padding()
                 }
-                .phaseAnimator([false, true]) { content, phase in
-                    content.offset(x: phase ? -1.0: 1.0)
-                            }
-                
-                Button {
-                    playSound("piano.mp3")
-                    
-                } label: {
-                    Image(systemName: "pianokeys.inverse")
-                        .foregroundStyle(.red)
-                        .font(.system(size: 60))
-                        .padding()
-                }
-                .phaseAnimator([false, true]) { content, phase in
-                                content.offset(y: phase ? -1.0 : 1.0)
-                            }
-                
-                Button {
-                    playSound("guitar.mp3")
-
-                } label: {
-                    Image(systemName: "guitars.fill")
-                        .foregroundStyle(.red)
-                        .font(.system(size: 60))
-                        .padding()
-                    
-                }
-                .phaseAnimator([false, true]) { content, phase in
-                    content.offset(x: phase ? 1.0: -1.0)
-                            }
-                
-                Button {
-                    AudioServicesPlaySystemSound(1321)
-                    
-                    
-                } label: {
-                    Image(systemName: "music.note")
-                        .foregroundStyle(.red)
-                        .font(.system(size: 60))
-                        .padding(10)
-                }
-                .phaseAnimator([false, true]) { content, phase in
-                                content.offset(y: phase ? 1.0 : -1.0)
-                            }
             }
+            .ignoresSafeArea()
+
             
+            ZStack {
+                LinearGradient(colors: [.red, .black], startPoint: .top, endPoint: .bottom);
+                
+                VStack {
+                    Button {
+                        AudioServicesPlaySystemSound(1025)
+                        
+                    } label: {
+                        Image(systemName: "horn.fill")
+                            .foregroundStyle(.red)
+                            .font(.system(size: 60))
+                            .padding()
+                    }
+                    .phaseAnimator([false, true]) { content, phase in
+                        content.offset(x: phase ? -1.0: 1.0)
+                    }
+                    
+                    Button {
+                        playSound("piano.mp3")
+                        
+                    } label: {
+                        Image(systemName: "pianokeys.inverse")
+                            .foregroundStyle(.red)
+                            .font(.system(size: 60))
+                            .padding()
+                    }
+                    .phaseAnimator([false, true]) { content, phase in
+                        content.offset(y: phase ? -1.0 : 1.0)
+                    }
+                    
+                    Button {
+                        playSound("guitar.mp3")
+                        
+                    } label: {
+                        Image(systemName: "guitars.fill")
+                            .foregroundStyle(.red)
+                            .font(.system(size: 60))
+                            .padding()
+                        
+                    }
+                    .phaseAnimator([false, true]) { content, phase in
+                        content.offset(x: phase ? 1.0: -1.0)
+                    }
+                    
+                    Button {
+                        AudioServicesPlaySystemSound(1321)
+                        
+                        
+                    } label: {
+                        Image(systemName: "music.note")
+                            .foregroundStyle(.red)
+                            .font(.system(size: 60))
+                            .padding(10)
+                    }
+                    .phaseAnimator([false, true]) { content, phase in
+                        content.offset(y: phase ? 1.0 : -1.0)
+                    }
+                }
+            }
+            .ignoresSafeArea()
         }
-        .ignoresSafeArea()
+
+        
         
     }
     
