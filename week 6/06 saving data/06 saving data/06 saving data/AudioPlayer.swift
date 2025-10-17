@@ -24,7 +24,7 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
 //        }
 //    }
     
-    var audioPlayer: AVAudioPlayer!
+    var audioPlayer: AVAudioPlayer?
     
     func startPlayback(audio: URL) {
         let playbackSession = AVAudioSession.sharedInstance()
@@ -37,8 +37,8 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
         
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: audio)
-            audioPlayer.delegate = self
-            audioPlayer.play()
+            audioPlayer?.delegate = self
+            audioPlayer?.play()
             isPlaying = true
         } catch {
             print("Playback failed.")
@@ -46,7 +46,7 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     }
     
     func stopPlayback() {
-        audioPlayer.stop()
+        audioPlayer?.stop()
         isPlaying = false
     }
     
