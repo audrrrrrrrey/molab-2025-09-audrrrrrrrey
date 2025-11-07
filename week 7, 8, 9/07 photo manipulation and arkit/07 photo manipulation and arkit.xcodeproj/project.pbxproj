@@ -15,22 +15,9 @@
 		59426D9C2EAB2F3300D38119 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		59426D9B2EAB2E8100D38119 /* Exceptions for "07 photo manipulation and arkit" folder in "07 photo manipulation and arkit" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"-7-photo-manipulation-and-arkit-Info.plist",
-			);
-			target = 59426D7A2EA2969F00D38119 /* 07 photo manipulation and arkit */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		59426D7D2EA2969F00D38119 /* 07 photo manipulation and arkit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				59426D9B2EAB2E8100D38119 /* Exceptions for "07 photo manipulation and arkit" folder in "07 photo manipulation and arkit" target */,
-			);
 			path = "07 photo manipulation and arkit";
 			sourceTree = "<group>";
 		};
