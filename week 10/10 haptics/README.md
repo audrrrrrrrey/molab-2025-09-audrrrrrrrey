@@ -5,6 +5,6 @@ haptics are interesting to me because they are native to apple and super tactile
 
 here i've just created three buttons that link to three different functions. the first returns the built-in "error" haptic. the second two are custom haptics using the core haptics library, which give you full control over the haptics feel and duration.
 
-my big reference for this week was [this hacking with swift article] (https://www.hackingwithswift.com/books/ios-swiftui/adding-haptic-effects) that served as a great introduction to haptics. 
+my big reference for this week was [this hacking with swift article](https://www.hackingwithswift.com/books/ios-swiftui/adding-haptic-effects) that served as a great introduction to haptics. 
 
 by audrrrrrrrey
