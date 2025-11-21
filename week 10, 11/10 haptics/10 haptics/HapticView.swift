@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HapticView.swift
 //  10 haptics
 //
 //  Created by Audrey Guo on 11/14/25.
@@ -8,10 +8,9 @@
 import CoreHaptics
 import SwiftUI
 
-struct ContentView: View {
-    @State private var counter = 0
+struct HapticView: View {
     @State private var engine: CHHapticEngine?
-    
+    @State private var counter = 0
     
     var body: some View {
         //easy way to add haptics
@@ -112,5 +111,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HapticView()
 }
