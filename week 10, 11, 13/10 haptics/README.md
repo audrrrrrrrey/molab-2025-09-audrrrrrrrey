@@ -19,6 +19,7 @@ here is a full list of references:
 - https://www.hackingwithswift.com/forums/swiftui/playing-sound/4921 for sound
 - built off existing code from https://github.com/NDCSwift/SensorExample/blob/main/SensorExample/ContentView.swift for motionmanager
 - https://github.com/molab-itp/05-BubbleLevel as a reference for motionmanager
+- apple's hapticricochet demo app https://developer.apple.com/videos/play/wwdc2021/10278/
 - apple docs for looking up syntax and features
 - chatgpt as a helper for physics, some shapes drawing, some errors
 
