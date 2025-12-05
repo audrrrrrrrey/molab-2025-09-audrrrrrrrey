@@ -4,6 +4,9 @@
 //
 //  Created by Audrey Guo on 11/14/25.
 //
+//  a view i made to test out haptics. i pulled code from here to use in MotionView, but the view as a whole isn't present in the final app
+//  here i've just created three buttons that link to three different functions. the first returns the built-in "error" haptic. the second two are custom haptics using the core haptics library, which give you full control over the haptics feel and duration.
+//  big reference  was https://www.hackingwithswift.com/books/ios-swiftui/adding-haptic-effects
 
 import CoreHaptics
 import SwiftUI
@@ -18,6 +21,7 @@ struct HapticView: View {
             counter += 1
         }
         
+        //lots of tests
 //        .sensoryFeedback(.impact(weight: .heavy, intensity: 1), trigger: counter)         //standard feeling
 //        .sensoryFeedback(.impact(flexibility: .soft, intensity: 1), trigger: counter)     //soft and nice
 //        .sensoryFeedback(.levelChange, trigger: counter)      //for some reason, this does nothing
@@ -28,7 +32,7 @@ struct HapticView: View {
 //        .sensoryFeedback(.stop, trigger: counter)             //for some reason, this does nothing
 //
 //        .sensoryFeedback(.success, trigger: counter)          //deep press
-        .sensoryFeedback(.error, trigger: counter)            //two shakes
+//        .sensoryFeedback(.error, trigger: counter)            //two shakes
 //        .sensoryFeedback(.warning, trigger: counter)          //like half of error
 //
 //        .sensoryFeedback(.increase, trigger: counter)         //very small, don't really feel like their names

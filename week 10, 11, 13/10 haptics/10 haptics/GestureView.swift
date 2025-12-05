@@ -4,7 +4,8 @@
 //
 //  Created by Audrey Guo on 11/20/25.
 //
-
+//  a view i made to test out gestures. i pulled code from here to use in MotionView, but the view as a whole isn't present in the final app
+//  ref'd this video https://www.hackingwithswift.com/books/ios-swiftui/how-to-use-gestures-in-swiftui
 
 import SwiftUI
 import CoreHaptics
@@ -127,6 +128,5 @@ struct GestureView: View {
 }
 
 //additional notes
-//ref'd this video https://www.hackingwithswift.com/books/ios-swiftui/how-to-use-gestures-in-swiftui
 //for children gestures wrapped inside parents gestures, use .highPriorityGesture to dictate which should override the other,
 //or .simultaneousGesture to do multiple
